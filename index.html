@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active">главная</a>
+            <a class="header__link_active" href="#header">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link">посмотреть лоты</a>
+            <a class="header__link" href="#lots">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link">об аукционе</a>
+            <a class="header__link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -45,13 +45,16 @@
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text"
-            >он<span class="no-letter-spacing">о</span></span
+            >о<span class="letter-spacing-extended">но</span></span
           >
           <span class="aligned-text aligned-text_center"
-            >теб<span class="no-letter-spacing">е</span></span
+            >те<span class="letter-spacing-extended">бе</span></span
           >
           <span class="aligned-text aligned-text_right"
-            ><span class="letter-spacing-extended">н</span>адо</span
+            ><span class="letter-spacing-extended">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
           >
         </h1>
         <div class="cover__description">
@@ -61,11 +64,11 @@
           <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="https://anything.ru/" target="_blank">
               <article class="card card_type_film">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -80,7 +83,7 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="https://anything.ru/" target="_blank">
               <article class="card card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -98,7 +101,7 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="https://anything.ru/" target="_blank">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -115,10 +118,15 @@
           </li>
         </ul>
         <div class="lots__look-more-block">
-          <a class="lots__look-more-link">посмотреть больше</a>
+          <a
+            class="lots__look-more-link"
+            href="https://anything.ru/"
+            target="_blank"
+            >посмотреть больше</a
+          >
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__column__logo">
           <div class="about__logo">
             <img
@@ -137,7 +145,7 @@
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p class="indent about__text">
+          <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -160,19 +168,23 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link_active">главная</a>
+            <a class="footer__menu-link" href="#header">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link">посмотреть лоты</a>
+            <a class="footer__menu-link" href="#lots">посмотреть лоты</a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link">об аукционе</a>
+            <a class="footer__menu-link_active" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a
+            class="footer__social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+          >
             <img
               class="footer__social-icon"
               src="./images/yt.svg"
@@ -181,7 +193,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a class="footer__social-link" href="https://vk.com/" target="_blank">
             <img
               class="footer__social-icon"
               src="./images/vk.svg"
@@ -190,7 +202,11 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a
+            class="footer__social-link"
+            href="https://ru.pinterest.com/"
+            target="_blank"
+          >
             <img
               class="footer__social-icon"
               src="./images/pinterest.svg"
